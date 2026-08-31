@@ -88,7 +88,7 @@ Arranca una vez:
 npm run dev
 ```
 
-Abre `http://localhost:5173`. Debe verse la página por defecto de Vite/React. Detén el servidor con `Ctrl+C`.
+Abre `http://localhost:5173`. Debe verse la página por defecto de Vite/React. En la plantilla actual (Vite 8) es una pantalla **Get started** con logos de React y Vite, no el contador clásico de tutoriales viejos. Detén el servidor con `Ctrl+C`.
 
 **Por qué Vite y no Create React App:** Vite es el scaffold actual recomendado: arranca rápido y usa `import.meta.env` para variables de entorno (lo usaremos en el Paso 3).
 
@@ -167,6 +167,8 @@ VITE_REDIRECT_URI=http://localhost:5173
 cp .env.example .env
 ```
 
+Si usas PowerShell en Windows: `Copy-Item .env.example .env`.
+
 Deja los textos `REEMPLAZAR_...` por ahora. En el Paso 8 los cambiarás por GUIDs reales. Hasta entonces la app debe mostrar un aviso de configuración incompleta (Paso 5 y 7).
 
 ### 3.3 No subir `.env` a Git
@@ -177,6 +179,8 @@ Abre `.gitignore` y asegúrate de tener:
 .env
 .env.local
 ```
+
+El `.gitignore` que genera Vite suele traer `*.local`, pero **no** incluye `.env`. Tienes que agregarlo tú; si no, un `git add .` sube tus GUIDs.
 
 Así cada persona usa su propio registro / tenant sin filtrar IDs del aula en el repositorio.
 
@@ -531,7 +535,7 @@ export function Profile() {
 }
 ```
 
-También asegúrate de que `src/App.css` incluya las clases `.token-box`, `.token-hint` y `.token-error` (están en el proyecto de referencia).
+Las clases `.token-box`, `.token-hint` y `.token-error` las pegas en el **Paso 7.2** al reemplazar `src/App.css`. Si ves el perfil sin cajas de token, te saltaste ese CSS.
 
 **Cómo comprobar:** tras el login ves perfil + ambos JWT en pantalla.
 

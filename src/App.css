@@ -1,0 +1,78 @@
+.app {
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem;
+}
+
+.app h1 {
+  margin: 0 0 1rem;
+  font-size: 1.75rem;
+  letter-spacing: -0.02em;
+}
+
+.app h2 {
+  margin: 1.5rem 0 0.75rem;
+  font-size: 1.15rem;
+}
+
+.banner {
+  padding: 1rem 1.1rem;
+  border: 1px solid #c9a227;
+  background: #fff8e1;
+  color: #5c4b00;
+  line-height: 1.5;
+}
+
+.banner code {
+  font-size: 0.9em;
+}
+
+.actions {
+  margin: 1rem 0;
+}
+
+.actions button {
+  font: inherit;
+  cursor: pointer;
+  padding: 0.65rem 1.1rem;
+  border: 1px solid #1a1a1a;
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.actions button:hover {
+  background: #333;
+  border-color: #333;
+}
+
+.profile ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  line-height: 1.7;
+}
+
+.token-hint {
+  margin: 0 0 0.5rem;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.token-error {
+  color: #8a1f1f;
+  background: #fdecec;
+  border: 1px solid #e2a0a0;
+  padding: 0.75rem 1rem;
+}
+
+.token-box {
+  margin: 0 0 1.25rem;
+  padding: 0.85rem 1rem;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-all;
+  font-size: 0.75rem;
+  line-height: 1.45;
+  background: #1a1a1a;
+  color: #e8e8e8;
+  border-radius: 0.4rem;
+}

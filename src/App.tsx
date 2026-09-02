@@ -5,6 +5,7 @@ import {
 import { isAuthConfigured } from './auth/msalConfig'
 import { SignInButton } from './components/SignInButton'
 import { SignOutButton } from './components/SignOutButton'
+import { ApiIntegration } from './components/ApiIntegration'
 import { Profile } from './components/Profile'
 import './App.css'
 
@@ -32,6 +33,7 @@ export default function App() {
           <SignOutButton />
         </div>
         <Profile />
+        <ApiIntegration />
       </AuthenticatedTemplate>
 
       <UnauthenticatedTemplate>

@@ -90,8 +90,10 @@ export function Profile() {
 
           <h2>Access Token (JWT · pase)</h2>
           <p className="token-hint">
-            Este es el que más adelante iría al API / Gateway. Aquí lo mostramos
-            solo para inspeccionarlo en clase.
+            Con scope <code>User.Read</code> es un pase para Microsoft Graph (lleva{' '}
+            <code>nonce</code> en el header). En esta clase Spring no lo valida;
+            la integración usa el ID Token. Más adelante pedirás un scope propio{' '}
+            <code>api://…</code> y este pase irá al API.
           </p>
           <pre className="token-box">{tokens.accessToken}</pre>
         </>

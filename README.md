@@ -861,3 +861,11 @@ npm install
 npm run dev            # http://localhost:5173
 npm run build
 ```
+
+---
+
+## Próximo paso — Integrar con `msal-api`
+
+Cuando el login funcione y veas ID Token + access token en **Perfil**, sigue **`../msal-api/README.md`** para levantar el back Spring Boot.
+
+Después conecta el front con el back en **`GUIA_INTEGRACION.md`** (esta carpeta): llamadas a `/public/hola` y `/api/me` desde React.

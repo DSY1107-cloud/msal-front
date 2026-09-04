@@ -90,10 +90,9 @@ export function Profile() {
 
           <h2>Access Token (JWT · pase)</h2>
           <p className="token-hint">
-            Con scope <code>User.Read</code> es un pase para Microsoft Graph (lleva{' '}
-            <code>nonce</code> en el header). En esta clase Spring no lo valida;
-            la integración usa el ID Token. Más adelante pedirás un scope propio{' '}
-            <code>api://…</code> y este pase irá al API.
+            Pase para <code>msal-api</code> (scope{' '}
+            <code>access_as_user</code>). Mándalo como Bearer a{' '}
+            <code>GET /api/me</code> o usa el botón de integración.
           </p>
           <pre className="token-box">{tokens.accessToken}</pre>
         </>

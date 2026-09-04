@@ -37,7 +37,7 @@ export function ApiIntegration() {
 
       const [publicData, privateData] = await Promise.all([
         fetchPublicHola(),
-        fetchPrivateMe(tokenResult.idToken),
+        fetchPrivateMe(tokenResult.accessToken),
       ])
 
       setData({ publicData, privateData })
@@ -66,8 +66,8 @@ export function ApiIntegration() {
       <h2>Integración con msal-api</h2>
       <p className="token-hint">
         Base URL: <code>{getApiBaseUrl()}</code>. La ruta pública no lleva token;
-        la privada envía el <strong>ID Token</strong> como Bearer (limitación de
-        esta clase con scope <code>User.Read</code>).
+        la privada envía el <strong>Access Token</strong> con scope{' '}
+        <code>access_as_user</code>.
       </p>
 
       <div className="actions">

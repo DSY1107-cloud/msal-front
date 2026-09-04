@@ -587,7 +587,4 @@ curl -i http://localhost:8080/api/me \
 
 ## Próximo paso
 
-**Expose an API** en Entra (`api://…/access_as_user`), configurar `audiences` en Spring y cambiar:
-
-1. `loginRequest.ts` — pedir el scope de tu API.
-2. `fetchPrivateMe(...)` — mandar `tokenResult.accessToken` (el pase **para tu API**), no el ID Token ni el de Graph.
+Sigue **`../GUIA_ACCESS_TOKEN.md`** (y su PDF `GUIA_ACCESS_TOKEN.pdf`) para usar el **access token real** con Expose an API, `audiences` en Spring y scope `api://…/access_as_user`.

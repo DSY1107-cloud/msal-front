@@ -869,3 +869,5 @@ npm run build
 Cuando el login funcione y veas ID Token + access token en **Perfil**, sigue **`../msal-api/README.md`** para levantar el back Spring Boot.
 
 Después conecta el front con el back en **`GUIA_INTEGRACION.md`** (esta carpeta): llamadas a `/public/hola` y `/api/me` desde React.
+
+Cuando eso funcione, la cuarta guía está en **`../GUIA_ACCESS_TOKEN.md`** (PDF: `../GUIA_ACCESS_TOKEN.pdf`): access token con Expose an API.

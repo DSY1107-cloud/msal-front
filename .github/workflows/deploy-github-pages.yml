@@ -4,7 +4,8 @@
 #
 # Antes del primer deploy:
 # 1. Settings → Pages → Source: GitHub Actions
-# 2. Settings → Secrets and variables → Actions → New repository secret:
+# 2. Settings → Environments → crea "env" (o usa Repository secrets)
+#    Environment secrets (environment "env"):
 #    - VITE_CLIENT_ID
 #    - VITE_TENANT_ID
 #    - VITE_API_URL          (ej. https://phbqfmzycj.execute-api.us-east-1.amazonaws.com)
@@ -31,6 +32,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Secrets creados como "Environment secrets" del environment "env"
+    environment: env
     steps:
       - name: Checkout
         uses: actions/checkout@v4
